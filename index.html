@@ -1,80 +1,103 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You Max</title>
+    <title>You Max - AI Face Rating</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* Add Inter font-family as default for Tailwind */
         body {
-            font-family: Arial, sans-serif;
-            background: #0d1b2a; /* koyu mavi arka plan */
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-            padding: 2rem;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-
-        h1 {
-            color: #1b95e0;
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #cfd8dc;
-        }
-
-        a.button {
-            display: inline-block;
-            margin: 0.5rem;
-            padding: 1rem 2rem;
-            color: white;
-            background: #1b95e0;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        a.button:hover {
-            background: #0b7dc1;
-        }
-
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #a0a0a0;
-        }
-
-        footer a {
-            color: #1b95e0;
-            text-decoration: none;
-            margin: 0 0.5rem;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        /* Gradient text for a premium look (Blue to Purple) */
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
         }
     </style>
 </head>
-<body>
-    <h1>You Max</h1>
-    <p>Developed by Smartify</p>
+<body class="flex h-full flex-col bg-gray-900 text-white">
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <div class="relative isolate overflow-hidden">
+            <!-- Background gradient grid -->
+            <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+                <defs>
+                    <pattern id="983e3e4c-de6d-4c3f-8d64-b873f15e0316" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                        <path d="M.5 200V.5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+                    <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+                </svg>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b873f15e0316)" />
+            </svg>
+            <!-- Background blur effect (Blue/Purple) -->
+            <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+                <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#3b82f6] to-[#9333ea] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64.3%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 1.3% 64.9%, 18.9% 51.8%, 7.2% 11.1%, 53.9% 0%, 48.9% 41.7%)"></div>
+            </div>
 
-    <a class="button" href="#" target="_blank">📱 Download on the App Store</a>
-    <a class="button" href="mailto:smartify04@gmail.com">Contact via email</a>
+            <!-- Content -->
+            <div class="mx-auto max-w-2xl px-6 py-24 text-center sm:py-32 lg:px-8">
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                    You <span class="text-gradient">Max</span>
+                </h1>
+                
+                <!-- Alt başlığa göre eklenen açıklama -->
+                <p class="mt-6 text-lg leading-8 text-gray-300">
+                    Analyze your face with AI, get scored, and receive personal "glow up" tips to unlock your potential.
+                </p>
+                
+                <p class="mt-4 text-sm text-gray-500">
+                    Developed by Smartify
+                </p>
 
-    <footer>
-        <a href="https://docs.google.com/document/d/1Z6L4xlRKdPxFP3583fz1G6bcUXfT5GeTh9ox7iR6HWs/edit?usp=sharing" target="_blank">Privacy Policy</a> |
-        <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank">Terms of Service</a> |
-        <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank">EULA</a>
+                <!-- Butonlar -->
+                <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <a href="#" target="_blank" class="flex items-center gap-x-2 rounded-md bg-indigo-600 px-5 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.87 2.508.03.027.98.08.902 1.036-.076.924-1.096 1.09-1.123 1.11-.027.02-.686.062-.686 1.14 0 1.077.657 1.133.676 1.14.02.007.66.062.66 1.11 0 1.04-.6 1.103-.66 1.11-.06.007-.676.043-.676 1.07 0 1.026.6 1.08.66 1.08.06.007.647.05.676.99.03.94-.9 1-1.123 1.11-.224.02-.614.05-.676.06-.06.01-.66.043-.66.99 0 .947.6 1 .66.99.06.01.647.04.676.05.03.01.614.05.676.06.06.01.66.03.66.94 0 .913-.6 1-.66.99-.06.01-.647.04-.676.05-.03.01-.614.05-.676.06-.06.01-.66.03-.66.94 0 .913-.6 1-.66.99-.06.01-.647.04-.676.05-.03.01-.614.05-.676.06a.627.627 0 0 1-.624-.62c0-.345.28-.62.624-.62.06.01.614.05.676.06.06.01.66.03.66.94 0 .913-.6 1-.66.99-.06.01-.647.04-.676.05-.03.01-.614.05-.676.06-.06.01-.66.03-.66.94 0 .913-.6 1-.66.99-.06.01-.647.04-.676.05C4.896 15.89 4.01 15.623 3.16 15.02c-.85-.603-1.638-1.543-1.96-2.618-.32-.02-.63-.04-.928-.05a.627.627 0 0 1-.624-.62c0-.345.28-.62.624-.62.298-.01.608-.03.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05.32-.02.63-.04.928-.05C7.909 3.01 9.73 3.02 11.182.008z M9.914 1.138c.64-.636 1.313-.826 1.763-.826.45 0 1.1.2 1.763.826.662.625.826 1.3.826 1.76 0 .46-.164 1.133-.826 1.763-.662.63-1.313.826-1.763.826-.45 0-1.1-.2-1.763-.826C8.614 4.04 8.45 3.368 8.45 2.908c0-.46.164-1.133.826-1.763.639-.63 1.313-.826 1.763-.826z"/>
+                        </svg>
+                        📱 Download on the App Store
+                    </a>
+                    <a href="mailto:smartify04@gmail.com" class="rounded-md bg-white/10 px-5 py-3 text-base font-semibold text-white transition hover:bg-white/20">
+                        Contact via Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="bg-gray-900">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
+            <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+                <div class="pb-6">
+                    <a href="https://docs.google.com/document/d/1Z6L4xlRKdPxFP3583fz1G6bcUXfT5GeTh9ox7iR6HWs/edit?usp=sharing" target="_blank" class="text-sm leading-6 text-gray-400 hover:text-gray-200 transition">Privacy Policy</a>
+                </div>
+                <div class="pb-6">
+                    <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank" class="text-sm leading-6 text-gray-400 hover:text-gray-200 transition">Terms of Service</a>
+                </div>
+                <div class="pb-6">
+                    <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank" class="text-sm leading-6 text-gray-400 hover:text-gray-200 transition">EULA</a>
+                </div>
+            </nav>
+            <p class="mt-10 text-center text-xs leading-5 text-gray-500">
+                &copy; 2025 You Max. All rights reserved.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
+
