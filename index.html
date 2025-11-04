@@ -3,122 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You Max Destek</title>
+    <title>You Max</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #4a90e2;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        main {
+            font-family: Arial, sans-serif;
+            background: #0d1b2a; /* koyu mavi arka plan */
+            color: #ffffff;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            padding: 2rem 1rem;
-        }
-
-        .form-section {
-            background: #fff;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 500px;
         }
 
-        .form-section h2 {
-            margin-bottom: 1rem;
-            color: #4a90e2;
-        }
-
-        form label {
-            display: block;
-            margin-top: 1rem;
+        h1 {
+            color: #1b95e0;
+            font-size: 3rem;
             margin-bottom: 0.5rem;
-            font-weight: bold;
         }
 
-        form input, form textarea {
-            width: 100%;
-            padding: 0.7rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #cfd8dc;
         }
 
-        form button {
-            margin-top: 1.5rem;
-            width: 100%;
-            padding: 0.8rem;
-            border: none;
-            border-radius: 5px;
-            background: #4a90e2;
+        a.button {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 1rem 2rem;
             color: white;
-            font-size: 1rem;
-            cursor: pointer;
+            background: #1b95e0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
             transition: 0.3s;
         }
 
-        form button:hover {
-            background: #357abd;
+        a.button:hover {
+            background: #0b7dc1;
         }
 
         footer {
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-            color: #555;
+            margin-top: 3rem;
             font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+
+        footer a {
+            color: #1b95e0;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>You Max Destek</h1>
-        <p>Her türlü sorununuz için bize yazın. En kısa sürede geri döneceğiz.</p>
-    </header>
+    <h1>You Max</h1>
+    <p>Developed by Smartify</p>
 
-    <main>
-        <section class="form-section">
-            <h2>Bize Ulaşın</h2>
-            <form action="https://formspree.io/f/mqkzeprl" method="POST">
-                <label for="name">Adınız:</label>
-                <input type="text" id="name" name="name" placeholder="Adınız" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" placeholder="Email adresiniz" required>
-
-                <label for="message">Mesajınız:</label>
-                <textarea id="message" name="message" placeholder="Sorununuzu yazın..." required></textarea>
-
-                <button type="submit">Gönder</button>
-            </form>
-        </section>
-    </main>
+    <a class="button" href="#" target="_blank">📱 Download on the App Store</a>
+    <a class="button" href="mailto:smartify04@gmail.com">Contact via email</a>
 
     <footer>
-        <p>&copy; 2025 You Max. Destek için: <a href="mailto:smartify04@gmail.com">smartify04@gmail.com</a></p>
+        <a href="https://docs.google.com/document/d/1Z6L4xlRKdPxFP3583fz1G6bcUXfT5GeTh9ox7iR6HWs/edit?usp=sharing" target="_blank">Privacy Policy</a> |
+        <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank">Terms of Service</a> |
+        <a href="https://docs.google.com/document/d/113DECQeHMnXMV7kjKeablIPaLD6sC_dSsMopt-3_onM/edit?usp=sharing" target="_blank">EULA</a>
     </footer>
 </body>
 </html>
